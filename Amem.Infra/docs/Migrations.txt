@@ -1,0 +1,5 @@
+Migrations
+
+erick@fedora:~/Projetos/Erick/amem$ clear; dotnet ef migrations add InitialCreate --project Amem.Domain --startup-project Amem.Api
+
+erick@fedora:~/Projetos/Erick/amem$ clear; dotnet ef database update --project Amem.Domain --startup-project Amem.Api

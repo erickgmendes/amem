@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: amem
+      POSTGRES_USER: amem
+      POSTGRES_PASSWORD: "!Amem2025"
+    ports:
+      - "5433:5432"
