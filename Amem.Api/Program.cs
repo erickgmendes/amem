@@ -10,13 +10,14 @@ builder.AddControllers();
 builder.Services.CorsConfig();
 builder.PostgresDatabaseConfig();
 builder.LoadDependencyInjection();
+builder.SwaggerConfig();
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
-});
+// builder.Services.AddSwaggerGen(c =>
+// {
+//     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
+// });
 
-builder.Services.Configure<ExternalApiSettings>(builder.Configuration.GetSection("ExternalApiSettings"));
+//builder.Services.Configure<ExternalApiSettings>(builder.Configuration.GetSection("ExternalApiSettings"));
 
 var app = builder.Build();
 

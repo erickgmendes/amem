@@ -1,11 +1,6 @@
-// using CliniQCare.Application.Services;
-// using CliniQCare.Application.Services.Impl;
-// using CliniQCare.Domain.Repositories;
-// using CliniQCare.Domain.Repositories.Impl;
-
 using Amem.Application.Services;
-using Amem.Domain.Data;
 using Amem.Domain.Repositories;
+using Amem.Infra.Configurations;
 
 namespace Amem.Api.Extensions
 {
@@ -24,6 +19,7 @@ namespace Amem.Api.Extensions
         private static void LoadExternalServices(this WebApplicationBuilder builder)
         {
             builder.Services.AddHttpClient();
+            builder.Services.Configure<ExternalApiSettings>(builder.Configuration.GetSection("ExternalApiSettings"));
         }        
         
         private static void LoadServices(this WebApplicationBuilder builder)

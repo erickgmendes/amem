@@ -18,18 +18,32 @@ public class LiturgiaDiariaController : ControllerBase
     public async Task<IActionResult> GetLiturgiaHoje()
     {
         var hoje = DateOnly.FromDateTime(DateTime.Today);
-        var liturgiaDiaria = await _liturgiaDiariaService.GetLiturgiaDiariaByDateAsync(hoje);
+
+        try
+        {
+            var liturgiaDiaria = await _liturgiaDiariaService.GetLiturgiaDiariaByDateAsync(hoje);
+            return Ok(liturgiaDiaria);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return NotFound();
+        }
         
-        if (liturgiaDiaria == null) return NotFound();
-        return Ok(liturgiaDiaria);
     }
 
     [HttpGet("{data}")]
     public async Task<IActionResult> GetLiturgiaByDate(DateOnly data)
     {
-        var liturgiaDiaria = await _liturgiaDiariaService.GetLiturgiaDiariaByDateAsync(data);
-        
-        if (liturgiaDiaria == null) return NotFound();
-        return Ok(liturgiaDiaria);
+        try
+        {
+            var liturgiaDiaria = await _liturgiaDiariaService.GetLiturgiaDiariaByDateAsync(data);
+            return Ok(liturgiaDiaria);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return NotFound();
+        }
     }
 }

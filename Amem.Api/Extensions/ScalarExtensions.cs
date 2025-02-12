@@ -1,4 +1,5 @@
 using AspNetCore.Scalar;
+using Microsoft.OpenApi.Models;
 using Scalar.AspNetCore;
 
 namespace Amem.Api.Extensions
@@ -13,6 +14,14 @@ namespace Amem.Api.Extensions
             {
                 options.UseTheme(Theme.Default);
                 options.RoutePrefix = "api-docs";
+            });
+        }
+        
+        public static void SwaggerConfig(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
             });
         }
 
