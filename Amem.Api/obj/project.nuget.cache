@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rIvI/1fHOGw=",
+  "dgSpecHash": "xmn4uu30x3A=",
   "success": true,
   "projectFilePath": "/home/erick/Projetos/Erick/amem/Amem.Api/Amem.Api.csproj",
   "expectedPackageFiles": [
     "/home/erick/.nuget/packages/aspnetcore.scalar/1.1.8/aspnetcore.scalar.1.1.8.nupkg.sha512",
+    "/home/erick/.nuget/packages/htmlagilitypack/1.11.72/htmlagilitypack.1.11.72.nupkg.sha512",
     "/home/erick/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/erick/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
     "/home/erick/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

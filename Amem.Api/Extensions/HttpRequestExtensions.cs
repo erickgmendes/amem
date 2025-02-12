@@ -3,7 +3,7 @@ namespace Amem.Api.Extensions
     public static class HttpRequestExtensions
     {
 
-        public static void HttpRequestPipelineConfig(this IServiceCollection service, WebApplication app)
+        public static void HttpRequestPipelineConfig(this WebApplication app)
         {
             if (app.Environment.IsDevelopment())
             {

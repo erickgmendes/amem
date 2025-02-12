@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WggCiSKRUzU=",
+  "dgSpecHash": "rOjC9oJHuOY=",
   "success": true,
   "projectFilePath": "/home/erick/Projetos/Erick/amem/Amem.Application/Amem.Application.csproj",
   "expectedPackageFiles": [
+    "/home/erick/.nuget/packages/htmlagilitypack/1.11.72/htmlagilitypack.1.11.72.nupkg.sha512",
     "/home/erick/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "/home/erick/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.1/microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",
     "/home/erick/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.1/microsoft.entityframeworkcore.analyzers.9.0.1.nupkg.sha512",

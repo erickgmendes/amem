@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Qf71Kt5kRNE=",
+  "dgSpecHash": "qsYVBbP0OqU=",
   "success": true,
   "projectFilePath": "/home/erick/Projetos/Erick/amem/Amem.Infra/Amem.Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/erick/.nuget/packages/htmlagilitypack/1.11.72/htmlagilitypack.1.11.72.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,19 +1,22 @@
 using Amem.Api.Extensions;
+using Amem.Infra.Configurations;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers(builder);
+builder.AddControllers();
 //builder.Services.AddSwaggerGen();
 
 builder.Services.CorsConfig();
-builder.Services.PostgresDatabaseConfig(builder);
-builder.Services.DependencyInjection(builder);
+builder.PostgresDatabaseConfig();
+builder.LoadDependencyInjection();
 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
 });
+
+builder.Services.Configure<ExternalApiSettings>(builder.Configuration.GetSection("ExternalApiSettings"));
 
 var app = builder.Build();
 
@@ -23,8 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-builder.Services.ScalarConfig(app);
-builder.Services.HttpRequestPipelineConfig(app);
+app.ScalarConfig();
+app.HttpRequestPipelineConfig();
 
 
 

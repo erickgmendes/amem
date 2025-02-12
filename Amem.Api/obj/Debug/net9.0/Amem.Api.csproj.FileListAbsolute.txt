@@ -139,3 +139,6 @@
 /home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/HtmlAgilityPack.dll
+/home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/Amem.Infra.dll
+/home/erick/Projetos/Erick/amem/Amem.Api/bin/Debug/net9.0/Amem.Infra.pdb

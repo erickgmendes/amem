@@ -10,3 +10,4 @@
 /home/erick/Projetos/Erick/amem/Amem.Infra/obj/Debug/net9.0/refint/Amem.Infra.dll
 /home/erick/Projetos/Erick/amem/Amem.Infra/obj/Debug/net9.0/Amem.Infra.pdb
 /home/erick/Projetos/Erick/amem/Amem.Infra/obj/Debug/net9.0/ref/Amem.Infra.dll
+/home/erick/Projetos/Erick/amem/Amem.Infra/obj/Debug/net9.0/Amem.Infra.csproj.AssemblyReference.cache

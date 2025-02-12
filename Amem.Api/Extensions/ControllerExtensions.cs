@@ -5,7 +5,7 @@ namespace Amem.Api.Extensions
     public static class ControllerExtensions
     {
         
-        public static void AddControllers(this IServiceCollection service, WebApplicationBuilder builder)
+        public static void AddControllers(this WebApplicationBuilder builder)
         {
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>

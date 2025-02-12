@@ -6,7 +6,7 @@ namespace Amem.Api.Extensions
     public static class ScalarExtensions
     {
 
-        public static void ScalarConfig(this IServiceCollection service, WebApplication app)
+        public static void ScalarConfig(this WebApplication app)
         {
             app.MapScalarApiReference();
             app.UseScalar(options =>

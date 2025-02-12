@@ -22,6 +22,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Amem.Application\Amem.Application.csproj" />
       <ProjectReference Include="..\Amem.Domain\Amem.Domain.csproj" />
+      <ProjectReference Include="..\Amem.Infra\Amem.Infra.csproj" />
     </ItemGroup>
 
 </Project>

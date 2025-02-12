@@ -12,30 +12,37 @@ namespace Amem.Api.Extensions
     public static class DependencyInjectionExtensions
     {
 
-        public static void DependencyInjection(this IServiceCollection service, WebApplicationBuilder builder)
+        public static void LoadDependencyInjection(this WebApplicationBuilder builder)
         {
-            LoadAbstractions(builder);
-            LoadServices(builder);
-            LoadRepositories(builder);
-            LoadMappers(builder);
+            builder.LoadExternalServices();
+            builder.LoadAbstractions();
+            builder.LoadServices();
+            builder.LoadRepositories();
+            builder.LoadMappers();
         }
 
-        private static void LoadServices(WebApplicationBuilder builder)
+        private static void LoadExternalServices(this WebApplicationBuilder builder)
         {
+            builder.Services.AddHttpClient();
+        }        
+        
+        private static void LoadServices(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddTransient<IExternalApiService, ExternalApiService>();
             builder.Services.AddTransient<ILiturgiaDiariaService, LiturgiaDiariaService>();
         }
 
-        private static void LoadRepositories(WebApplicationBuilder builder)
+        private static void LoadRepositories(this WebApplicationBuilder builder)
         {
             builder.Services.AddTransient<ILiturgiaDiariaRepository, LiturgiaDiariaRepository>();
         }
 
-        private static void LoadMappers(WebApplicationBuilder builder)
+        private static void LoadMappers(this WebApplicationBuilder builder)
         {
             // builder.Services.AddTransient<IUserMapper, UserMapper>();
         }
 
-        private static void LoadAbstractions(WebApplicationBuilder builder)
+        private static void LoadAbstractions(this WebApplicationBuilder builder)
         {
             // builder.Services.AddTransient(typeof(IBaseService<>), typeof(BaseService<>));
             // builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
