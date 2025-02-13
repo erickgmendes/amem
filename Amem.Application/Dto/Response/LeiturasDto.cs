@@ -5,13 +5,13 @@ namespace Amem.Application.Dto.Response;
 public class LeiturasDto
 {
     [JsonPropertyName("primeiraLeitura")]
-    public List<LeituraDto>? PrimeiraLeitura { get; set; }
+    public ICollection<LeituraDto>? PrimeiraLeitura { get; set; }
     [JsonPropertyName("segundaLeitura")]
-    public List<LeituraDto>? SegundaLeitura { get; set; }
+    public ICollection<LeituraDto>? SegundaLeitura { get; set; }
     [JsonPropertyName("evangelho")]
-    public List<LeituraDto>? Evangelho { get; set; }
+    public ICollection<LeituraDto>? Evangelho { get; set; }
     [JsonPropertyName("salmo")]
-    public List<SalmoDto>? Salmo { get; set; }
+    public ICollection<SalmoDto>? Salmo { get; set; }
     [JsonPropertyName("extras")]
-    public List<LeituraExtraDto>? Extras { get; set; }
+    public ICollection<LeituraExtraDto>? Extras { get; set; }
 }

@@ -11,5 +11,5 @@ public class OracoesDto
     [JsonPropertyName("comunhao")]
     public string? Comunhao { get; set; }
     [JsonPropertyName("extras")]
-    public List<OracaoExtraDto>? Extras { get; set; }
+    public ICollection<OracaoExtraDto>? Extras { get; set; }
 }

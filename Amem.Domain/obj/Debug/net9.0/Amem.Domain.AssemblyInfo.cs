@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Amem.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+838a306b650fa6340995ff7ab1f6f7c8d49a7bce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86f59cb388e51a0e12743d3ac4ec95adfb0ded98")]
 [assembly: System.Reflection.AssemblyProductAttribute("Amem.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Amem.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
