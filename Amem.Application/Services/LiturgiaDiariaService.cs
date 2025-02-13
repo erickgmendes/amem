@@ -22,7 +22,7 @@ public class LiturgiaDiariaService : ILiturgiaDiariaService
         _externalApiService = externalApiService;
     }
 
-    public async Task<LiturgiaDto> GetLiturgiaDiariaByDateAsync(DateOnly date)
+    public async Task<LiturgiaDto?> GetLiturgiaDiariaByDateAsync(DateOnly date)
     {
         var dia = date.ToString("dd");
         var mes = date.ToString("MM");

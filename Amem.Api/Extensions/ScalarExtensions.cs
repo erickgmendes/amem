@@ -9,6 +9,12 @@ namespace Amem.Api.Extensions
 
         public static void ScalarConfig(this WebApplication app)
         {
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+            
             app.MapScalarApiReference();
             app.UseScalar(options =>
             {
